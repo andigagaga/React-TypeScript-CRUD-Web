@@ -1,9 +1,8 @@
-
-import Products, { Product } from "./Pages/Products";
 import { Route, Routes } from "react-router-dom";
-import DetailProduct from "./Pages/Detail-Product";
 
-
+import Products from "./Pages/Products";
+import DetailProduct from "./Pages/DetailProduct";
+import FormProduct from "./component/FormProduct";
 
 export default function App() {
 
@@ -15,6 +14,7 @@ export default function App() {
           path="/products/:id"
           element={<DetailProduct/>}
         />
+        <Route path="/postProduct" element={<FormProduct/>}/>
       </Routes>
     </>
   );
